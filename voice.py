@@ -1,9 +1,9 @@
-import pyttsx3
+import pyttsx3 
 import subprocess
 
 engine = pyttsx3.init()
-engine.setProperty('rate', 150)
-engine.setProperty('voice', 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_RU-RU_IRINA_11.0')
+engine.setProperty('rate', 150) # настройка скорости восапроизведения звука
+engine.setProperty('voice', 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_RU-RU_IRINA_11.0') # здесь ставится ссылка на файл воспроизведения на локальном копьютере
 
 def text_to_file(text): # функция преобразования текста в звуковой файл
     mp3_file = 'data/test.mp3' # указываем путь для mp3 файла 
