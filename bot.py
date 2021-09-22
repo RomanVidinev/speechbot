@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandler, Filters
 from  voice import text_to_file
-TOKEN = " "
+TOKEN = " Здесь нужно вставить свой номер токена для телеграмма "
 
 def hello(update, context):
     update.message.reply_text(f'Hello {update.effective_user.first_name}')
