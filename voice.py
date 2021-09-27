@@ -2,7 +2,7 @@ import pyttsx3
 import subprocess
 
 engine = pyttsx3.init()
-engine.setProperty('rate', 150) # настройка скорости восапроизведения звука
+engine.setProperty('rate', 150) # настройка скорости воспроизведения звука
 # здесь ставится ссылка на файл воспроизведения на локальном копьютере
 engine.setProperty('voice', 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_RU-RU_IRINA_11.0')
 
