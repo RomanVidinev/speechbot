@@ -4,7 +4,7 @@ from  voice import text_to_file
 TOKEN = " Здесь нужно вставить свой номер токена для Телеграма "
 
 def hello(update, context):
-    update.message.reply_text(f'Hello {update.effective_user.first_name}') # при вводе команды /hello, выдается имя, зарегестрированное пользователем
+    update.message.reply_text(f'Hello {update.effective_user.first_name}') # при вводе команды /hello, выдается имя, зарегистрированное пользователем
 
 def help_handler(update, context):
     help_text = """Для того, чтобы преобразовать текст в аудио, используйте наш бот. Напишите или скопируйте и вставьте любой текст, и он превратится в аудио сообщение."""
